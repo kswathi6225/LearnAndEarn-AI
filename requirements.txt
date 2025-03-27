@@ -1,0 +1,11 @@
+streamlit
+pandas
+numpy
+plotly
+google-generativeai
+uuid
+pillow
+sqlite3
+hashlib
+re
+json
