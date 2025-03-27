@@ -1,8 +1,8 @@
 # google_solution_challenege
-# Learn & Earn - Google Solution Challenge 2025
+# Learn & Earn ai - Google Solution Challenge 2025
 
 ## 🚀 Project Overview
-**Learn & Earn** is an AI-powered platform designed to empower rural communities by bridging the gap between skill development and job opportunities. This project is part of the **Google Solution Challenge 2025**, aimed at addressing real-world problems using technology.
+**Learn & Earn ai** is an AI-powered platform designed to empower rural communities by bridging the gap between skill development and job opportunities. This project is part of the **Google Solution Challenge 2025**, aimed at addressing real-world problems using technology.
 
 ## 🏆 Problem Statement: Empowering Rural Communities to Break the Cycle of Poverty
 Rural communities often struggle with limited access to education, skill development, and employment opportunities, leading to financial instability. **Learn & Earn** addresses these challenges by providing AI-driven skill development, job matching, and interview preparation to help individuals acquire skills, secure jobs, and achieve financial independence.
