@@ -1046,9 +1046,16 @@ class AdvancedLearnAndEarnPlatform:
         if user_question:
             # Generate AI response
             try:
-                ai_response = self.get_ai_response(user_question)
-                st.subheader("AI Response:")
-                st.write(ai_response)
+                # Ensure the AI service is properly configured
+                if not hasattr(genai, 'generate_text'):
+                    raise RuntimeError("AI service is not configured correctly.")
+                
+                ai_response = genai.generate_text(prompt=user_question, max_output_tokens=200)
+                if ai_response and hasattr(ai_response, 'text'):
+                    st.subheader("AI Response:")
+                    st.write(ai_response.text.strip())
+                else:
+                    raise RuntimeError("AI service returned an invalid response.")
             except Exception as e:
                 st.error("AI is currently unavailable. Please try again later.")
                 st.info("Fallback Response: Practice answering common interview questions like 'Tell me about yourself' or 'What are your strengths and weaknesses?'")
