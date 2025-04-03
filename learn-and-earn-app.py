@@ -1071,16 +1071,32 @@ class AdvancedLearnAndEarnPlatform:
     def run(self):
         st.set_page_config(page_title="Learn & Earn Pro", page_icon="🚀", layout="wide")
         
-        # Check if the user is logged in
-        if not st.session_state.get('logged_in', False):
-            # If not logged in, show only the Login and Register options
-            menu = ["Login", "Register"]
-            choice = st.sidebar.selectbox("Navigation", menu)
-            
-            if choice == "Login":
-                self.login_page()
-            elif choice == "Register":
+        # Ensure session state variables are initialized
+        if 'logged_in' not in st.session_state:
+            st.session_state['logged_in'] = False
+        if 'user_id' not in st.session_state:
+            st.session_state['user_id'] = None
+        if 'username' not in st.session_state:
+            st.session_state['username'] = None
+        if 'current_page' not in st.session_state:
+            st.session_state['current_page'] = 'Login'
+
+        # Navigation logic based on session state
+        if not st.session_state['logged_in']:
+            st.title("Welcome to Learn & Earn Pro")
+            col1, col2 = st.columns(2)
+            with col1:
+                if st.button("Register", key="register_button"):
+                    st.session_state['current_page'] = 'Register'
+            with col2:
+                if st.button("Login", key="login_button"):
+                    st.session_state['current_page'] = 'Login'
+
+            # Render the appropriate page
+            if st.session_state['current_page'] == 'Register':
                 self.user_registration()
+            elif st.session_state['current_page'] == 'Login':
+                self.login_page()
         else:
             # If logged in, show the full menu
             menu = ["Dashboard", "Courses", "Enrolled Courses", "Jobs", "AI Job Matching", "AI Interview Preparation", "Profile", "Logout"]
