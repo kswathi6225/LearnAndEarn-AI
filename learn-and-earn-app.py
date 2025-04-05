@@ -5,7 +5,7 @@ import plotly.express as px
 import plotly.graph_objs as go
 import random
 from datetime import datetime, timedelta
-import google.generativeai as genai
+import google as genai
 import uuid
 import io
 import base64
