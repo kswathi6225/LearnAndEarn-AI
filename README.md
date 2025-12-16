@@ -1,5 +1,7 @@
 # Learn & Earn AI
 
+> This project is intended to demonstrate data handling, reporting, and dashboard support skills for analytics-focused roles.
+
 ## Project Overview
 Learn & Earn AI is a Python-based learning platform designed to help users improve skills and track their learning progress. The application focuses on collecting, handling, and processing structured user data related to learning activities, and presenting the information in a clear and understandable format.
 
@@ -39,6 +41,8 @@ The primary focus of the project is on **data handling, validation, and presenta
 - **Firebase** – basic storage of user-related data  
 - **Tableau (Basic / Exploratory)** – explored for visualizing sample project data to understand dashboard-based reporting  
 - **GitHub** – version control and collaboration  
+
+---
 
 ## Project Structure
 ```
