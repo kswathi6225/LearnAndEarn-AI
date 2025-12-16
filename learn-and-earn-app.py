@@ -1,3 +1,16 @@
+"""
+Learn & Earn AI
+Purpose:
+This project demonstrates handling of structured data, database operations,
+basic data analysis, and dashboard-style reporting using Python.
+
+Focus Areas:
+- Data storage using SQLite
+- Data retrieval and processing using SQL and Pandas
+- Visualization of user progress and metrics
+- Script maintenance, testing, and debugging
+"""
+
 import streamlit as st
 import pandas as pd
 import numpy as np
