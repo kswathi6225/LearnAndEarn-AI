@@ -1,4 +1,4 @@
-```md
+
 # Learn & Earn AI
 
 ## Project Overview
@@ -60,7 +60,7 @@ learn-and-earn-ai/
    ```sh
    git clone https://github.com/kswathi6225/LearnAndEarn-AI.git
    cd LearnAndEarn-AI
-````
+
 
 2. Install dependencies:
 
@@ -95,4 +95,3 @@ learn-and-earn-ai/
 
 This project is licensed under the MIT License.
 
-```
